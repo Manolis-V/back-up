@@ -37,16 +37,16 @@ def handle_folders(temp_source_folder, backup_folder_path):
             backup_folder_path_folder.mkdir(parents=True, exist_ok=True)
             handle_folders(file_path, backup_folder_path_folder)
 
-
-# Copy files from source to destination
-for file_path in source_folder.iterdir():
+handle_folders(source_folder, backup_folder_path)
+# # Copy files from source to destination
+# for file_path in source_folder.iterdir():
     
-    # handling files
-    if file_path.is_file():
-        copy_files(file_path, backup_folder_path)
+#     # handling files
+#     if file_path.is_file():
+#         copy_files(file_path, backup_folder_path)
 
-    # handling folders
-    if file_path.is_dir() and file_path.name != '.git':
-        backup_folder_path_folder = backup_folder_path / file_path.name
-        backup_folder_path_folder.mkdir(parents=True, exist_ok=True)
-        handle_folders(file_path, backup_folder_path_folder)
+#     # handling folders
+#     if file_path.is_dir() and file_path.name != '.git':
+#         backup_folder_path_folder = backup_folder_path / file_path.name
+#         backup_folder_path_folder.mkdir(parents=True, exist_ok=True)
+#         handle_folders(file_path, backup_folder_path_folder)

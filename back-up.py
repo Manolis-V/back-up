@@ -45,7 +45,7 @@ def handle_folders(temp_source_folder, backup_folder_path):
 # Copy files from source to destination
 for file_path in source_folder.iterdir():
     
-    # handling files
+    # handling filesfemoemfo
     if file_path.is_file():
         copy_files(0, file_path, backup_folder_path)
 

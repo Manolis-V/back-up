@@ -3,8 +3,8 @@ from pathlib import Path
 import time
 
 # Specify the source and destination folders
-source_folder = Path('C:/Users/manol/Documents/git/back-up')
-destination_folder = Path('C:/Users/manol/Documents/back-ups')
+source_folder = Path('..../back-up')
+destination_folder = Path('..../back-ups')
 
 # Create a timestamped backup folder
 backup_folder_name = f"backup_{Path(source_folder).name}"

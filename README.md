@@ -37,7 +37,7 @@ Given the following source directory structure:
 /source-directory
 |-- file1.txt
 |-- file2.txt
-\-- subdirectory
+|-- subdirectory
     |-- file3.txt
 ```
 After running the script, the backup directory will have the same structure:
@@ -46,7 +46,7 @@ After running the script, the backup directory will have the same structure:
 /backup-directory
 |-- file1.txt
 |-- file2.txt
-\-- subdirectory
+|-- subdirectory
     |-- file3.txt
 ```
 If `file1.txt` is modified or a new file `file4.txt` is added to the source directory, running the script again will update `file1.txt` and add `file4.txt` to the backup directory without copying the unmodified files.
